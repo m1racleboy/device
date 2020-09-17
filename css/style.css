@@ -1,0 +1,377 @@
+/* Fonts */
+
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans normal";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v18-latin_cyrillic-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("../fonts/open-sans-v18-latin_cyrillic-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin_cyrillic-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/open-sans-v18-latin_cyrillic-300.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v18-latin_cyrillic-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v18-latin_cyrillic-300.svg#OpenSans")
+      format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v18-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("../fonts/open-sans-v18-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v18-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-800 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/open-sans-v18-latin_cyrillic-800.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
+    url("../fonts/open-sans-v18-latin_cyrillic-800.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin_cyrillic-800.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/open-sans-v18-latin_cyrillic-800.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v18-latin_cyrillic-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v18-latin_cyrillic-800.svg#OpenSans")
+      format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Gilroy bold";
+  src: url("../fonts/Gilroy-Extrabold.eot");
+  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"),
+    url("../fonts/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Extrabold.woff") format("woff"),
+    url("../fonts/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy normal";
+  src: url("../fonts/Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+    url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Light.woff2") format("woff2"),
+    url("../fonts/Gilroy-Light.woff") format("woff"),
+    url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-hafl-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #ffffff;
+  --special-yellow-dark: #f0c52e;
+  --special-yellow: #f7e296;
+  --special-green: #91c92f;
+  --status-pink: #f6dada;
+}
+
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--special-yellow);
+}
+
+.site-navigation {
+  list-style: none;
+  font-family: "Gilroy bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.user-navigation {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.pop-up-catalog {
+  display: none;
+}
+
+.pop-up-categories {
+  list-style: none;
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.market-name,
+.category-name {
+  display: none;
+}
+
+.product-header {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.product-description {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.button {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.table-cell {
+  font-family: "Gilroy normal", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.table-header {
+  font-family: "Gilroy normal", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.categories-list {
+  list-style: none;
+}
+
+.categories-item {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.features {
+  background-color: var(--basic-grey-light);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-header {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.feature-description {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about-us-header {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.about-us-description {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about-us-list {
+  list-style: none;
+}
+
+.about-us-item {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contacts-header {
+  font-family: "Gilroy bold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.contacts-description {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.page-footer {
+  background-color: var(--basic-dark);
+}
+
+.footer-features-list {
+  list-style: none;
+  font-family: "Gilroy bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer-link {
+  color: var(--basic-white);
+}
+
+.user-navigation {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.social-icons-list {
+  list-style: none;
+}
+
+.footer-user-nav {
+  list-style: none;
+}
+
+.footer-user-nav-item {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer-login,
+.footer-compare,
+.footer-basket {
+  color: var(--basic-white);
+  opacity: 70%;
+}
+
+.footer-login:hover,
+.footer-compare:hover,
+.footer-basket:hover {
+  opacity: 100%;
+}
+
+.footer-login:active,
+.footer-compare:active,
+.footer-basket:active {
+  opacity: 30%;
+}
+
+.footer-features-item:hover {
+  opacity: 60%;
+}
+
+.footer-features-item:active {
+  opacity: 30%;
+}
+
+.htmlacademy-logo:hover {
+  opacity: 60%;
+}
+
+.htmlacademy-logo:active {
+  opacity: 30%;
+}
+
+.button:active {
+  opacity: 30%;
+}
+
+.pop-up-item:hover {
+  opacity: 60%;
+}
+
+.pop-up-item:active {
+  opacity: 30%;
+}
+
+.site-nav-item:hover {
+  opacity: 60%;
+}
+
+.site-nav-item:active {
+  opacity: 30%;
+}
+
+.user-nav-item:hover {
+  opacity: 60%;
+}
+
+.user-nav-item:active {
+  opacity: 30%;
+}
+
+.categories-item-link:active p {
+  opacity: 30%;
+}
+
+.category {
+  background-color: var(--special-yellow);
+  width: 160px;
+  height: 160px;
+}
+
+.category:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.category:active {
+  background-color: var(--special-yellow-dark);
+}
+
+address,
+.number {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+}
