@@ -1,90 +1,31 @@
 /* Fonts */
 
-/* open-sans-300 - latin_cyrillic */
 @font-face {
   font-family: "Open Sans normal";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/open-sans-v18-latin_cyrillic-300.eot");
-  /* IE9 Compat Modes */
+  src: url("../fonts/open-sans-v18-latin_cyrillic-300.woff2");
   src: local("Open Sans Light"), local("OpenSans-Light"),
-    url("../fonts/open-sans-v18-latin_cyrillic-300.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin_cyrillic-300.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/open-sans-v18-latin_cyrillic-300.woff") format("woff"),
-    /* Modern Browsers */ url("../fonts/open-sans-v18-latin_cyrillic-300.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/open-sans-v18-latin_cyrillic-300.svg#OpenSans")
-      format("svg");
-  /* Legacy iOS */
-}
-
-/* open-sans-regular - latin */
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v18-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans Regular"), local("OpenSans-Regular"),
-    url("../fonts/open-sans-v18-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/open-sans-v18-latin-regular.svg#OpenSans") format("svg");
-  /* Legacy iOS */
-}
-
-/* open-sans-800 - latin_cyrillic */
-@font-face {
-  font-family: "Open Sans bold";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/open-sans-v18-latin_cyrillic-800.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
-    url("../fonts/open-sans-v18-latin_cyrillic-800.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin_cyrillic-800.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/open-sans-v18-latin_cyrillic-800.woff") format("woff"),
-    /* Modern Browsers */ url("../fonts/open-sans-v18-latin_cyrillic-800.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/open-sans-v18-latin_cyrillic-800.svg#OpenSans")
-      format("svg");
-  /* Legacy iOS */
+    url("../fonts/open-sans-v18-latin_cyrillic-300.woff2") format("woff2"),
+    url("../fonts/open-sans-v18-latin_cyrillic-300.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy bold";
-  src: url("../fonts/Gilroy-Extrabold.eot");
+  src: url("../fonts/Gilroy-Extrabold.woff2");
   src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"),
-    url("../fonts/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
-    url("../fonts/Gilroy-Extrabold.woff") format("woff"),
-    url("../fonts/Gilroy-Extrabold.ttf") format("truetype");
+    url("../fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy normal";
-  src: url("../fonts/Gilroy-Light.eot");
+  src: ("../fonts/Gilroy-Light.woff2");
   src: local("Gilroy Light"), local("Gilroy-Light"),
-    url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Gilroy-Light.woff2") format("woff2"),
-    url("../fonts/Gilroy-Light.woff") format("woff"),
-    url("../fonts/Gilroy-Light.ttf") format("truetype");
+    url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -106,12 +47,21 @@ body {
   min-width: 1160px;
   margin: 0;
   padding: 0;
+  font-family: "Gilroy bold", Arial, sans-serif;
   color: var(--basic-black);
 }
 
-a {
+.page a {
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.page footer a {
+  color: var(--basic-white);
+}
+
+.page ul {
+  list-style: none;
 }
 
 img {
@@ -119,13 +69,16 @@ img {
   height: auto;
 }
 
+.titles {
+  font-size: 47px;
+  line-height: 58px;
+}
+
 .main-header {
   background-color: var(--special-yellow);
 }
 
 .site-navigation {
-  list-style: none;
-  font-family: "Gilroy bold", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
@@ -135,40 +88,34 @@ img {
   font-family: "Open Sans normal", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  list-style: none;
 }
 
-.pop-up-catalog {
-  display: none;
+/* .category-menu {
+  visibility: hidden;
+} */
+
+.category-menu-item {
+  text-transform: none;
 }
 
-.pop-up-categories {
-  list-style: none;
+.category-menu-item {
   font-family: "Open Sans normal", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
 
-.market-name,
-.category-name {
+.market-title,
+.category-title {
   display: none;
-}
-
-.product-header {
-  font-family: "Gilroy bold", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 58px;
 }
 
 .product-description {
   font-family: "Open Sans normal", Arial, sans-serif;
-  font-weight: 300;
   font-size: 15px;
   line-height: 20px;
 }
 
 .button {
-  font-family: "Gilroy bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
@@ -186,12 +133,7 @@ img {
   line-height: 15px;
 }
 
-.categories-list {
-  list-style: none;
-}
-
 .categories-item {
-  font-family: "Gilroy bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
 }
@@ -200,26 +142,10 @@ img {
   background-color: var(--basic-grey-light);
 }
 
-.features-list {
-  list-style: none;
-}
-
-.feature-header {
-  font-family: "Gilroy bold", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 58px;
-}
-
 .feature-description {
   font-family: "Open Sans normal", Arial, sans-serif;
   font-size: 15px;
   line-height: 28px;
-}
-
-.about-us-header {
-  font-family: "Gilroy bold", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 58px;
 }
 
 .about-us-description {
@@ -228,20 +154,9 @@ img {
   line-height: 28px;
 }
 
-.about-us-list {
-  list-style: none;
-}
-
 .about-us-item {
-  font-family: "Gilroy bold", Arial, sans-serif;
   font-size: 16px;
   line-height: 28px;
-}
-
-.contacts-header {
-  font-family: "Gilroy bold", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 58px;
 }
 
 .contacts-description {
@@ -255,8 +170,6 @@ img {
 }
 
 .footer-features-list {
-  list-style: none;
-  font-family: "Gilroy bold", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
@@ -266,90 +179,34 @@ img {
   color: var(--basic-white);
 }
 
-.user-navigation {
-  font-family: "Open Sans normal", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  list-style: none;
-}
-
-.social-icons-list {
-  list-style: none;
-}
-
-.footer-user-nav {
-  list-style: none;
-}
-
 .footer-user-nav-item {
   font-family: "Open Sans normal", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
 
-.footer-login,
-.footer-compare,
-.footer-basket {
+.footer-user-links {
   color: var(--basic-white);
   opacity: 70%;
 }
 
-.footer-login:hover,
-.footer-compare:hover,
-.footer-basket:hover {
+.footer-user-links:hover {
   opacity: 100%;
 }
 
-.footer-login:active,
-.footer-compare:active,
-.footer-basket:active {
-  opacity: 30%;
-}
-
-.footer-features-item:hover {
+.footer-features-item:hover,
+.htmlacademy-logo:hover,
+.category-menu-item:hover,
+.advantages-links:hover {
   opacity: 60%;
 }
 
-.footer-features-item:active {
-  opacity: 30%;
-}
-
-.htmlacademy-logo:hover {
-  opacity: 60%;
-}
-
-.htmlacademy-logo:active {
-  opacity: 30%;
-}
-
-.button:active {
-  opacity: 30%;
-}
-
-.pop-up-item:hover {
-  opacity: 60%;
-}
-
-.pop-up-item:active {
-  opacity: 30%;
-}
-
-.site-nav-item:hover {
-  opacity: 60%;
-}
-
-.site-nav-item:active {
-  opacity: 30%;
-}
-
-.user-nav-item:hover {
-  opacity: 60%;
-}
-
-.user-nav-item:active {
-  opacity: 30%;
-}
-
+.footer-user-links:active,
+.advantages-links:active,
+.htmlacademy-logo img:active,
+.categories-list .button:active,
+.category-menu-links:active,
+.user-links:active,
 .categories-item-link:active p {
   opacity: 30%;
 }
