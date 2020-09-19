@@ -56,7 +56,7 @@ body {
   color: var(--basic-black);
 }
 
-.page footer a {
+.page-footer a {
   color: var(--basic-white);
 }
 
@@ -69,7 +69,7 @@ img {
   height: auto;
 }
 
-.titles {
+.title {
   font-size: 47px;
   line-height: 58px;
 }
@@ -90,9 +90,9 @@ img {
   line-height: 20px;
 }
 
-/* .category-menu {
+.category-menu {
   visibility: hidden;
-} */
+}
 
 .category-menu-item {
   text-transform: none;
@@ -104,9 +104,23 @@ img {
   line-height: 20px;
 }
 
-.market-title,
-.category-title {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .product-description {
