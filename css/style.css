@@ -246,3 +246,122 @@ address,
   line-height: 20px;
   color: var(--basic-white);
 }
+
+.breadcrumbs-item {
+  font-family: "Open sans normal", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 30%;
+}
+
+.filter-header,
+.sorting {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-title {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sorting-item {
+  font-family: "Open sans normal", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 30%;
+}
+
+.current {
+  opacity: 100%;
+}
+
+.toddler {
+  font-family: "Gilroy normal", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-item {
+  font-family: "Open sans normal", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.price {
+  font-family: "Gilroy normal", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.product-item {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.add-compare {
+  font-family: "Open sans normal", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 50%;
+}
+
+.image-hover-wrapper {
+  background-color: var(--basic-grey-light);
+  width: 360px;
+  height: 380px;
+}
+
+.product-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.pagination {
+  width: 760px;
+  height: 70px;
+  background-color: var(--basic-grey-light);
+}
+
+.pagination-item {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:active {
+  opacity: 10%;
+}
+
+.sorting-item:hover {
+  opacity: 60%;
+}
+
+.sorting-item:active {
+  opacity: 100%;
+}
+
+.add-compare:hover {
+  opacity: 100%;
+}
+
+.add-compare:active {
+  opacity: 20%;
+}
+
+.pagination-link {
+  opacity: 30%;
+}
+
+.pagination-link:hover {
+  opacity: 60%;
+}
+
+.current-link,
+.pagination-link:active {
+  opacity: 100%;
+}
