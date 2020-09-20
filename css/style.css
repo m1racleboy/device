@@ -211,12 +211,12 @@ input[type="radio"].visually-hidden {
 .footer-features-item:hover,
 .htmlacademy-logo:hover,
 .category-menu-item:hover,
-.advantages-links:hover {
+.important-link:hover {
   opacity: 60%;
 }
 
 .footer-user-links:active,
-.advantages-links:active,
+.important-link:active,
 .htmlacademy-logo img:active,
 .categories-list .button:active,
 .category-menu-links:active,
@@ -300,14 +300,14 @@ address,
   line-height: 22px;
 }
 
-.add-compare {
+.compare-button {
   font-family: "Open sans normal", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   opacity: 50%;
 }
 
-.image-hover-wrapper {
+.product-item-container {
   background-color: var(--basic-grey-light);
   width: 360px;
   height: 380px;
@@ -345,11 +345,11 @@ address,
   opacity: 100%;
 }
 
-.add-compare:hover {
+.compare-button:hover {
   opacity: 100%;
 }
 
-.add-compare:active {
+.compare-button:active {
   opacity: 20%;
 }
 
@@ -364,4 +364,21 @@ address,
 .current-link,
 .pagination-link:active {
   opacity: 100%;
+}
+
+.social-icons-item {
+  opacity: 30%;
+}
+
+.social-icons-item:hover,
+.main-logo:hover {
+  opacity: 60%;
+}
+
+.social-icons-item:active {
+  opacity: 10%;
+}
+
+.main-logo:active {
+  opacity: 30%;
 }
