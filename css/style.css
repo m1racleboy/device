@@ -69,11 +69,6 @@ img {
   height: auto;
 }
 
-.title {
-  font-size: 47px;
-  line-height: 58px;
-}
-
 .main-header {
   background-color: var(--special-yellow);
 }
@@ -211,12 +206,12 @@ input[type="radio"].visually-hidden {
 .footer-features-item:hover,
 .htmlacademy-logo:hover,
 .category-menu-item:hover,
-.important-link:hover {
+.nav-link:hover {
   opacity: 60%;
 }
 
 .footer-user-links:active,
-.important-link:active,
+.nav-link:active,
 .htmlacademy-logo img:active,
 .categories-list .button:active,
 .category-menu-links:active,
@@ -381,4 +376,9 @@ address,
 
 .main-logo:active {
   opacity: 30%;
+}
+
+.title {
+  font-size: 47px;
+  line-height: 58px;
 }
