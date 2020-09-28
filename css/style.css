@@ -59,14 +59,11 @@ body {
 .page ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .page-footer a {
   color: var(--basic-white);
-}
-
-.page ul {
-  list-style: none;
 }
 
 img {
@@ -233,7 +230,7 @@ input[type="radio"].visually-hidden {
 .category {
   background-color: var(--special-yellow);
   width: 160px;
-  height: 160px;
+  min-height: 160px;
 }
 
 .category:hover {
@@ -313,6 +310,10 @@ address,
 }
 
 .product-item-container {
+  width: 360px;
+}
+
+.product-img-wrapper {
   background-color: var(--basic-grey-light);
   width: 360px;
   height: 380px;
@@ -411,10 +412,6 @@ address,
   margin-top: 40px;
 }
 
-.container {
-  margin: 0 auto;
-}
-
 .popular-products {
   margin: 0 auto;
   width: 1160px;
@@ -472,15 +469,13 @@ address,
   margin-bottom: 77px;
 }
 
-.title-wrapper {
+.wrapper {
   width: 500px;
-  height: 96px;
   margin-left: 60px;
-  margin-top: 55px;
   margin-bottom: 50px;
 }
 
-.container-catalog {
+.container {
   width: 1160px;
   margin: 0 auto;
 }
@@ -493,10 +488,10 @@ address,
 
 .card-wrapper {
   width: 832px;
-  height: 1214px;
   grid-column-gap: 40px;
   grid-row-gap: 48px;
   display: grid;
   grid-template-columns: 365px 365px;
   grid-template-rows: 455px 455px 70px;
+  margin-bottom: 100px;
 }
