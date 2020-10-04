@@ -18,28 +18,26 @@
         <form>
           <input type="search" placeholder="Поиск по сайту" name="search" />
         </form>
-        <div class="list-wrapper">
-          <ul class="user-navigation">
-            <li class="user-nav-item-catalog">
-              <a href="https://htmlacademy.ru/profile/id1004201" class="login-link user-links">Валентин Петухов</a>
-            </li>
-            <li class="user-nav-item-catalog">
-              <a href="#" class="exit-link user-links">Выйти</a>
-            </li>
-            <li class="user-nav-item-catalog">
-              <a href="#" class="compare-link user-links">Сравнить</a>
-            </li>
-            <li class="user-nav-item-catalog">
-              <a href="#" class="basket-link user-links">Корзина</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="user-navigation">
+          <li class="user-nav-item">
+            <a href="https://htmlacademy.ru/profile/id1004201" class="login-link user-links">Валентин Петухов</a>
+          </li>
+          <li class="user-nav-item">
+            <a href="#" class="exit-link user-links">Выйти</a>
+          </li>
+          <li class="user-nav-item">
+            <a href="#" class="compare-link user-links">Сравнить</a>
+          </li>
+          <li class="user-nav-item">
+            <a href="#" class="basket-link user-links">Корзина</a>
+          </li>
+        </ul>
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-nav-item">
             <a href="catalog.html" class="nav-link">Каталог товаров</a>
-            <div class="category-menu visually-hidden">
+            <div class="category-menu">
               <ul class="category-menu-list">
                 <li class="category-menu-item">
                   <a href="catalog.html" class="category-menu-links">Виртуальная реальность</a>
@@ -75,31 +73,28 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
     <div class="container">
-      <div class="wrapper">
-        <h1 class="title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item">
-            <a href="#" class="breadcrumbs-link">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a href="#" class="breadcrumbs-link">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a href="#" class="breadcrumbs-link">Моноподы для селфи</a>
-          </li>
-        </ul>
-      </div>
+      <h1 class="title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Моноподы для селфи</a>
+        </li>
+      </ul>
     </div>
 
     <div class="catalog-wrap">
-      <div class="catalog-wrap__row1">
-        <div class="catalog-wrap__row1__col1">
+      <div class="catalog-wrap-header">
+        <div class="catalog-wrap-header-filter">
           <h2 class="filter-header">Фильтр:</h2>
         </div>
-        <div class="catalog-wrap__row1__col2">
+        <div class="catalog-wrap-header-sort">
           <div class="sort-wrapper">
             <h2 class="sorting">Сортировка:</h2>
             <ul class="sorting-list">
@@ -120,8 +115,8 @@
           </div>
         </div>
       </div>
-      <div class="catalog-wrap__row2">
-        <div class="catalog-wrap__row2__col1">
+      <div class="catalog-wrap-content">
+        <div class="catalog-wrap-filter">
           <section class="filter">
             <h3 class="filter-title">Стоимость</h3>
             <input type="range" min="0" max="5000" />
@@ -150,54 +145,45 @@
             <a href="#" class="button">Показать</a>
           </section>
         </div>
-        <div class="catalog-wrap__row2__col2">
+        <div class="catalog-wrap-product-card">
           <section class="products">
-
             <div class="card-wrapper">
               <h2 class="visually-hidden">Список моноподов для селфи</h2>
               <article class="product-item-container">
-                <h3 class="visually-hidden">Любительская селфи-палка</h3>
                 <a href="#" class="product-link">
                   <img src="img/item-1-1.jpg" width="360" height="380" alt="Любительская селфи-палка" />
                 </a>
                 <a href="#" class="button">В корзину</a>
                 <a href="#" class="compare-button">Добавить к сравнению</a>
-                <p class="product-title">
-                  Любительская селфи-палка <span class="price">500 руб.</span>
-                </p>
+                <p class="product-card-title">Любительская селфи-палка <span class="price">500 руб.</span></p>
+
               </article>
               <article class="product-item-container">
-                <h3 class="visually-hidden">Профессианальная селфи-палка</h3>
                 <a href="#" class="product-link">
                   <img src="img/item-2-1.jpg" width="360" height="380" alt="Профессианальная селфи-палка" />
                 </a>
                 <a href="#" class="button">В корзину</a>
                 <a href="#" class="compare-button">Добавить к сравнению</a>
-                <p class="product-title">
-                  Профессианальная селфи-палка <span class="price">1500 руб.</span>
-                </p>
+                <p class="product-card-title">Профессианальная селфи-палка <span class="price">1500 руб.</span></p>
+
               </article>
               <article class="product-item-container">
-                <h3 class="visually-hidden">Непотопляемая селфи-палка</h3>
                 <a href="#" class="product-link">
                   <img src="img/item-3-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" />
                 </a>
                 <a href="#" class="button">В корзину</a>
                 <a href="#" class="compare-button">Добавить к сравнению</a>
-                <p class="product-title">
-                  Непотопляемая селфи-палка <span class="price">2500 руб.</span>
-                </p>
+                <p class="product-card-title">Непотополяемая селфи-палка <span class="price">2500 руб.</span></p>
+
               </article>
               <article class="product-item-container">
-                <h3 class="visually-hidden">Селфи палка «Следуй за мной»</h3>
                 <a href="#" class="product-link">
                   <img src="img/item-4-1.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»" />
                 </a>
                 <a href="#" class="button">В корзину</a>
                 <a href="#" class="compare-button">Добавить к сравнению</a>
-                <p class="product-title">
-                  Селфи-палка «Следуй за мной» <span class="price">4900 руб.</span>
-                </p>
+                <p class="product-card-title">Селфи-палка «Следуй за мной» <span class="price">4900 руб.</span></p>
+
               </article>
             </div>
             <div class="pagination">
