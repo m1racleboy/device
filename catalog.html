@@ -15,8 +15,9 @@
         <img src="img/logo-header.svg" width="163" height="35" alt="DEVICE" />
       </a>
       <div class="header-top">
-        <form>
-          <input type="search" placeholder="Поиск по сайту" name="search" />
+        <form class="search-form">
+          <input  type="search" class="search" placeholder="Поиск по сайту" name="search" />
+          <button type="submit" class="search-button">Найти</button>
         </form>
         <ul class="user-navigation user-nav-user">
           <li class="user-nav-item">
@@ -37,26 +38,32 @@
         <ul class="site-navigation">
           <li class="site-nav-item">
             <a href="catalog.html" class="nav-link catalog-link">Каталог товаров</a>
-            <ul class="category-menu-list">
-              <li class="category-menu-item  category-menu-first-column category-menu-first-row">
-                <a href="catalog.html" class="category-menu-links">Виртуальная реальность</a>
-              </li>
-              <li class="category-menu-item category-menu-first-column category-menu-second-row">
-                <a href="catalog.html" class="category-menu-links">Моноподы для селфи</a>
-              </li>
-              <li class="category-menu-item category-menu-first-column category-menu-third-row">
-                <a href="catalog.html" class="category-menu-links">Экшн-камеры</a>
-              </li>
-              <li class="category-menu-item category-menu-second-column category-menu-first-row">
-                <a href="catalog.html" class="category-menu-links">Фитнес-браслеты</a>
-              </li>
-              <li class="category-menu-item category-menu-second-column category-menu-second-row">
-                <a href="catalog.html" class="category-menu-links">Умные часы</a>
-              </li>
-              <li class="category-menu-item category-menu-third-column category-menu-first-row">
-                <a href="catalog.html" class="category-menu-links">Квадрокоптер</a>
-              </li>
-            </ul>
+            <div class="category-menu-list">
+              <ul class="category-menu-list-column1">
+                <li class="category-menu-item  category-menu-first-column category-menu-first-row">
+                  <a href="catalog.html" class="category-menu-links">Виртуальная реальность</a>
+                </li>
+                <li class="category-menu-item category-menu-first-column category-menu-second-row">
+                  <a href="catalog.html" class="category-menu-links">Моноподы для селфи</a>
+                </li>
+                <li class="category-menu-item category-menu-first-column category-menu-third-row">
+                  <a href="catalog.html" class="category-menu-links">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="category-menu-list-column2">
+                <li class="category-menu-item category-menu-second-column category-menu-first-row">
+                  <a href="catalog.html" class="category-menu-links">Фитнес-браслеты</a>
+                </li>
+                <li class="category-menu-item category-menu-second-column category-menu-second-row">
+                  <a href="catalog.html" class="category-menu-links">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="category-menu-list-column3">
+                <li class="category-menu-item category-menu-third-column category-menu-first-row">
+                  <a href="catalog.html" class="category-menu-links">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-nav-item">
             <a href="#" class="nav-link">Доставка</a>

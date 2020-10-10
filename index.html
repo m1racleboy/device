@@ -15,8 +15,9 @@
         <img src="img/logo-header.svg" width="163" height="35" alt="DEVICE" />
       </a>
       <div class="header-top">
-        <form>
-          <input type="search" placeholder="Поиск по сайту" name="search" />
+        <form class="search-form">
+          <input  type="search" class="search" placeholder="Поиск по сайту" name="search" />
+          <button type="submit" class="search-button">Найти</button>
         </form>
         <ul class="user-navigation">
           <li class="user-nav-item user-nav-login">
@@ -34,26 +35,32 @@
         <ul class="site-navigation">
           <li class="site-nav-item">
             <a href="catalog.html" class="nav-link catalog-link">Каталог товаров</a>
-            <ul class="category-menu-list">
-              <li class="category-menu-item  category-menu-first-column category-menu-first-row">
-                <a href="catalog.html" class="category-menu-links">Виртуальная реальность</a>
-              </li>
-              <li class="category-menu-item category-menu-first-column category-menu-second-row">
-                <a href="catalog.html" class="category-menu-links">Моноподы для селфи</a>
-              </li>
-              <li class="category-menu-item category-menu-first-column category-menu-third-row">
-                <a href="catalog.html" class="category-menu-links">Экшн-камеры</a>
-              </li>
-              <li class="category-menu-item category-menu-second-column category-menu-first-row">
-                <a href="catalog.html" class="category-menu-links">Фитнес-браслеты</a>
-              </li>
-              <li class="category-menu-item category-menu-second-column category-menu-second-row">
-                <a href="catalog.html" class="category-menu-links">Умные часы</a>
-              </li>
-              <li class="category-menu-item category-menu-third-column category-menu-first-row">
-                <a href="catalog.html" class="category-menu-links">Квадрокоптер</a>
-              </li>
-            </ul>
+            <div class="category-menu-list">
+              <ul class="category-menu-list-column1">
+                <li class="category-menu-item  category-menu-first-column category-menu-first-row">
+                  <a href="catalog.html" class="category-menu-links">Виртуальная реальность</a>
+                </li>
+                <li class="category-menu-item category-menu-first-column category-menu-second-row">
+                  <a href="catalog.html" class="category-menu-links">Моноподы для селфи</a>
+                </li>
+                <li class="category-menu-item category-menu-first-column category-menu-third-row">
+                  <a href="catalog.html" class="category-menu-links">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="category-menu-list-column2">
+                <li class="category-menu-item category-menu-second-column category-menu-first-row">
+                  <a href="catalog.html" class="category-menu-links">Фитнес-браслеты</a>
+                </li>
+                <li class="category-menu-item category-menu-second-column category-menu-second-row">
+                  <a href="catalog.html" class="category-menu-links">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="category-menu-list-column3">
+                <li class="category-menu-item category-menu-third-column category-menu-first-row">
+                  <a href="catalog.html" class="category-menu-links">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-nav-item">
             <a href="#" class="nav-link">Доставка</a>
@@ -95,9 +102,9 @@
                     <td class="table-cell-item">Карбон</td>
                   </tr>
                   <tr class="table-header">
-                    <th class="table-header-item">Длинна палки</th>
-                    <th class="table-header-item">Вес палки</th>
-                    <th class="table-header-item">Материал</th>
+                    <td class="table-header-item">Длинна палки</td>
+                    <td class="table-header-item">Вес палки</td>
+                    <td class="table-header-item">Материал</td>
                   </tr>
                 </table>
               </div>
@@ -119,7 +126,7 @@
                     <td class="table-cell-item">48 часов</td>
                   </tr>
                   <tr class="table-header">
-                    <th class="table-header-item">Без подзарядки</th>
+                    <td class="table-header-item">Без подзарядки</td>
                   </tr>
                 </table>
               </div>
@@ -145,8 +152,8 @@
                     <td class="table-cell-item">500 м</td>
                   </tr>
                   <tr class="table-header">
-                    <th class="table-header-item">Дальность полета</th>
-                    <th class="table-header-item">Радиус поражения</th>
+                    <td class="table-header-item">Дальность полета</td>
+                    <td class="table-header-item">Радиус поражения</td>
                   </tr>
                 </table>
               </div>
@@ -166,38 +173,32 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
           <li class="categories-item"> <a href="catalog.html" class="categories-item-link">
-              <div class="category ">
-                <div class="vr"></div>
+              <div class="category vr">
               </div>
               <p>Виртуальная реальность</p>
             </a> </li>
           <li class="categories-item"> <a href="catalog.html" class="categories-item-link">
-              <div class="category">
-                <div class="monopods-for-selfie"></div>
+              <div class="category monopods-for-selfie">
               </div>
               <p>Моноподы для селфи</p>
             </a> </li>
           <li class="categories-item"> <a href="catalog.html" class="categories-item-link">
-              <div class="category">
-                <div class="action-camera"></div>
+              <div class="category action-camera">
               </div>
               <p>Экшн-камеры</p>
             </a> </li>
           <li class="categories-item"> <a href="catalog.html" class="categories-item-link">
-              <div class="category">
-                <div class="fitness-bracelets"></div>
+              <div class="category fitness-bracelets">
               </div>
               <p>Фитнес-браслеты</p>
             </a> </li>
           <li class="categories-item"> <a href="catalog.html" class="categories-item-link">
-              <div class="category">
-                <div class="smart-watch"></div>
+              <div class="category smart-watch">
               </div>
               <p>Умные часы</p>
             </a> </li>
           <li class="categories-item"> <a href="catalog.html" class="categories-item-link">
-              <div class="category">
-                <div class="quadcopters"></div>
+              <div class="category quadcopters">
               </div>
               <p>Квадракоптеры</p>
             </a> </li>
@@ -218,16 +219,15 @@
             <a href="#" class="button">Кредит</a>
           </li>
         </ul>
-        <div class="feature-slide slide-current">
+        <div class="feature-slide dilevery slide-current">
           <h3 class="feature-title title">Доставка</h3>
           <p class="feature-description">
             Мы с удовольствием доставим ваш товар прямо к вашему<br />
             подъезду совершенно бесплатно! Ведь мы неплохо<br />
             заработаем, поднимая его на ваш этаж.
           </p>
-          <div class="courier"></div>
         </div>
-        <div class="feature-slide">
+        <div class="feature-slide guarantee ">
           <h3 class="feature-title title">Гарантия</h3>
           <p class="feature-description">
             Если из-за возгорания купленного у нас товара у вас сгорит дом —
@@ -235,16 +235,14 @@
             не переживайте, мы выдадим вам новый. <br />
             Товар, не дом, конечно же.
           </p>
-          <div class="guarantee"></div>
         </div>
-        <div class="feature-slide">
+        <div class="feature-slide credit">
           <h3 class="feature-title title">Кредит</h3>
           <p class="feature-description">
             Залезть в долговую яму стало проще! Кредитные консультанты <br />
             подберут для вас наиболее выгодные <br />
             условия кредита. Выгодные для нашего банка, разумеется.
           </p>
-          <div class="credit"></div>
         </div>
       </div>
     </section>
@@ -253,17 +251,17 @@
         <h2 class="visually-hidden">Популярные бренды</h2>
         <ul class="brand-list">
           <li class="brand-item">
-            <a class="dji" href="#"><img src="img/logo-grey-1.png" width="260" height="100" alt="DJI" /></a>
+            <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="DJI" /></a>
           </li>
           <li class="brand-item">
-            <a class="sp-gadgets" href="#"><img src="img/logo-grey-2.png" width="260" height="100"
+            <a href="#"><img src="img/logo-2.png" width="260" height="100"
                 alt="SP GADGETS" /></a>
           </li>
           <li class="brand-item">
-            <a class="gopro" href="#"><img src="img/logo-grey-3.png" width="260" height="100" alt="GoPro" /></a>
+            <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="GoPro" /></a>
           </li>
           <li class="brand-item">
-            <a class="vive" href="#"><img src="img/logo-grey-4.png" width="260" height="100" alt="VIVE" /></a>
+            <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="VIVE" /></a>
           </li>
         </ul>
       </section>
