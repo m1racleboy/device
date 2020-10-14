@@ -111,6 +111,8 @@ input[type="radio"].visually-hidden {
   font-family: "Open Sans normal", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
+  margin-bottom: 51px;
+  margin-top: 0;
 }
 
 .button {
@@ -120,7 +122,11 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2em;
 }
 
-tbody {
+.table-parameters {
+  border-spacing: 0px;
+}
+
+.table {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -137,7 +143,7 @@ tbody {
 
 .table-cell-item {
   letter-spacing: 0.1em;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 
 .table-header-item {
@@ -152,11 +158,11 @@ tbody {
 }
 
 .slider-item:nth-child(1) .table-cell-item:nth-child(2) {
-  min-width: 134px;
+  min-width: 137px;
 }
 
 .slider-item:nth-child(1) .table-header-item:first-child {
-  min-width: 153px;
+  min-width: 156px;
 }
 
 .slider-item:nth-child(1) .table-header-item:nth-child(2) {
@@ -205,7 +211,6 @@ tbody {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 69px;
   letter-spacing: 0.1em;
 }
 
@@ -506,7 +511,6 @@ address,
 
 .main-header {
   min-height: 300px;
-  margin-bottom: 476px;
 }
 
 .categories {
@@ -744,8 +748,8 @@ address,
   width: 1040px;
   justify-content: space-between;
   position: relative;
-  top: -9px;
-  margin-bottom: 26px;
+  margin-top: -9px;
+  margin-bottom: 35px;
 }
 
 .user-navigation {
@@ -909,6 +913,11 @@ address,
   margin-right: 103px;
 }
 
+.site-nav-item:nth-child(4) {
+  position: absolute;
+  right: -4px;
+}
+
 .user-nav-cart {
   margin-left: 42px;
 }
@@ -930,10 +939,6 @@ address,
   background-position: 2px 55%;
 }
 
-.login-link {
-  background-image: url("../img/login.svg");
-}
-
 .compare-link {
   background-image: url("../img/compare.svg");
 }
@@ -948,8 +953,8 @@ address,
 
 .popular-products {
   margin: 0 auto;
-  position: absolute;
-  top: -605px;
+  margin-top: -129px;
+  margin-bottom: 93px;
 }
 
 .slider-item {
@@ -957,75 +962,49 @@ address,
   width: 1160px;
 }
 
-.slider-item:nth-child(1) .slide-item-left {
-  width: 384px;
-  margin-right: 127px;
-  margin-left: 89px;
+.slide-item-left {
+  width: 600px;
 }
 
-
-.slider-item:nth-child(2) .slide-item-left {
-  width: 345px;
-  margin-right: 44px;
+.monopode-selfie {
+  padding-left: 89px;
+  padding-bottom: 23px;
 }
 
-.slider-item:nth-child(2) .slide-item-left img {
-  margin-top: 26px;
-  margin-left: 116px;
+.fitness-bracelet {
+  padding-top: 26px;
+  padding-left: 116px;
 }
 
-.slider-item:nth-child(2) .slide-item-right {
-  margin-left: 211px;
+.quadcopter {
+  padding-top: 82px;
+  padding-left: 30px;
+  padding-bottom: 93px;
 }
 
-.slider-item:nth-child(3) .slide-item-left {
-  width: 526px;
-  margin-right: 74px;
-}
-
-.slider-item:nth-child(3) .slide-item-left img {
-  margin-top: 82px;
-  margin-left: 30px;
-}
-
-.slide-item-right:nth-child(3) {
-  margin-left: 100px;
+.slide-number-item {
+  font-size: 179px;
+  line-height: 213px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-item:nth-child(3) .slide-number-item {
-  font-size: 179px;
-  line-height: 213px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  position: absolute;
   top: -17px;
   right: 53px;
-  margin: 0;
-  padding: 0;
 }
 
 .slider-item:nth-child(2) .slide-number-item {
-  font-size: 179px;
-  line-height: 213px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  position: absolute;
   top: -18px;
   right: 54px;
-  margin: 0;
-  padding: 0;
 }
 
 .slider-item:first-child .slide-number-item {
-  font-size: 179px;
-  line-height: 213px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  position: absolute;
   top: -17px;
   right: 48px;
-  margin: 0;
-  padding: 0;
 }
 
 .main-logo {
@@ -1041,9 +1020,6 @@ address,
   z-index: 1;
 }
 
-.product-description {
-  margin-bottom: 51px;
-}
 
 .category:active>div {
   opacity: 30%;
@@ -1210,7 +1186,7 @@ address,
 }
 
 .feature-title {
-  position: absolute;
+  position: relative;
   margin: 0;
   top: -30px;
   letter-spacing: 0.2em;
@@ -1327,7 +1303,7 @@ address,
   width: 220px;
   text-align: center;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 }
 
 .slide-item-right .button::before,
@@ -1504,14 +1480,12 @@ address,
 .features-list li {
   width: 100%;
   margin: 11px 0;
-  padding: 0;
   text-align: center;
 }
 
 .features-list li:first-child {
   width: 100%;
   margin: 12px 0 10px;
-  padding: 0;
   text-align: center;
 }
 
