@@ -19,7 +19,7 @@
           <input  type="search" class="search" placeholder="Поиск по сайту" name="search" />
           <button type="submit" class="search-button">Найти</button>
         </form>
-        <ul class="user-navigation user-nav-user">
+        <ul class="user-navigation">
           <li class="user-nav-item">
             <a href="https://htmlacademy.ru/profile/id1004201" class="login-link user-link">Валентин Петухов</a>
           </li>
@@ -124,8 +124,9 @@
         <div class="catalog-wrap-container">
           <div class="catalog-wrap-filter">
             <section class="filter">
+              <h2 class="visually-hidden">Фильтры</h2>
               <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class=filter-item>
+                <fieldset >
                   <legend class="filter-title">Стоимость</legend>
                   <div class="range-filter">
                     <div class="range-controls">
@@ -146,29 +147,29 @@
               <fieldset>
                 <legend class="filter-title">Цвет</legend>
                 <ul>
-                  <li class="filter-option filter-checkbox">
+                  <li class="filter-option ">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="black" id="filter-black" checked>
                     <label for="filter-black">Чёрный</label>
                   </li>
-                  <li class="filter-option filter-checkbox">
+                  <li class="filter-option ">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="white" id="filter-white">
                     <label for="filter-white">Белый</label>
                   </li>
-                  <li class="filter-option filter-checkbox">
+                  <li class="filter-option ">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blue" id="filter-blue" checked>
                     <label for="filter-blue">Синий</label>
                   </li>
-                  <li class="filter-option filter-checkbox">
+                  <li class="filter-option ">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="red" id="filter-red" checked>
                     <label for="filter-red">Красный</label>
                   </li>
-                  <li class="filter-option filter-checkbox">
+                  <li class="filter-option ">
                     <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pink" id="filter-pink">
                     <label for="filter-pink">Розовый</label>
                   </li>
                 </ul> 
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend class="filter-title">Bluetooth</legend>
                 <ul>
                   <li class="filter-option filter-radio">
@@ -190,7 +191,7 @@
               <div class="card-wrapper">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
                 <article class="product-item-container">
-                  <div href="#" class="product-wrapper">
+                  <div class="product-wrapper">
                     <img src="img/item-1-1.jpg" width="360" height="380" alt="Любительская селфи-палка" />
                     <div class="card-hover">
                       <a href="#" class="button">В корзину</a>
@@ -203,7 +204,7 @@
                   </div>
                 </article>
                 <article class="product-item-container">
-                  <div href="#" class="product-wrapper">
+                  <div  class="product-wrapper">
                     <img src="img/item-2-1.jpg" width="360" height="380" alt="Профессианальная селфи-палка" />
                     <div class="card-hover">
                       <a href="#" class="button">В корзину</a>
@@ -216,7 +217,7 @@
                   </div>
                 </article>
                 <article class="product-item-container">
-                  <div href="#" class="product-wrapper">
+                  <div class="product-wrapper">
                     <img src="img/item-3-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" />
                     <div class="card-hover">
                       <a href="#" class="button">В корзину</a>
@@ -229,9 +230,8 @@
                   </div>
                 </article>
                 <article class="product-item-container">
-                  <div href="#" class="product-wrapper">
+                  <div class="product-wrapper new-product">
                     <img src="img/item-4-1.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»" />
-                    <div class="new-product"><p class="new">New</p></div>
                     <div class="card-hover">
                       <a href="#" class="button">В корзину</a>
                       <a href="#" class="compare-button">Добавить к сравнению</a>
