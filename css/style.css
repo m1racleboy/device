@@ -285,7 +285,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--special-yellow-dark);
 }
 
-address,
+.address,
 .number {
   font-family: "Open Sans normal", Arial, sans-serif;
   font-size: 15px;
@@ -317,16 +317,14 @@ address,
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 6px;
-  right: -23px;
+  top: 9px;
+  right: -22px;
   z-index: 1;
-  width: 7px;
-  height: 7px;
-  border-radius: 50px 0 0;
-  transform: rotate(-45deg) scale(.73);
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
-  color: rgba(0, 0, 0, 1)
+  width: 3px;
+  height: 3px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-45deg);
 }
 
 .filter-header,
@@ -1299,6 +1297,7 @@ address,
   display: flex;
   width: 72px;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .slider-controls .button {
@@ -1873,4 +1872,196 @@ address,
 
 .footer-user-link:active {
   opacity: 30%;
+}
+
+
+/* MODALS */
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+  display: none;
+}
+
+.modal-write-us {
+  width: 960px;
+  height: 550px;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  background-color: var(--basic-white);
+}
+
+.modal-map {
+  width: 962px;
+  height: 559px;
+  z-index: 2;
+}
+
+.write-us-form {
+  width: 760px;
+  margin: 0 auto;
+  padding: 92px 0 69px;
+}
+
+.write-us-input,
+.write-us-textarea {
+  font-family: "Open Sans normal", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.write-us-label {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.form-input-wrapper {
+  display: flex;
+}
+
+.wrapper-column:first-child {
+  margin-right: 40px;
+  margin-bottom: 32px;
+}
+
+.write-us-textarea {
+  width: 720px;
+  margin-top: 10px;
+  padding: 0;
+  padding: 14px 19px 130px;
+  border: 2px #F2F2F2 solid;
+  background: #F2F2F2;
+  resize: none;
+}
+
+.write-us-input {
+  margin-top: 10px;
+  padding: 0;
+  padding-left: 18px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  border: 2px #F2F2F2 solid;
+  background: #F2F2F2;
+  width: 340px;
+}
+
+.write-us-textarea:hover,
+.write-us-input:hover {
+  background-color: #EAEAEA;
+  border-color: #EAEAEA;
+}
+
+.write-us-textarea:hover::placeholder,
+.write-us-input:hover::placeholder {
+  color: rgba(0, 0, 0, .4);
+}
+
+.write-us-form input:not(:focus):not(:hover):invalid {
+  background-color: var(--status-pink);
+}
+
+.write-us-textarea:focus,
+.write-us-input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--special-yellow);
+}
+
+.write-us-textarea:focus::placeholder,
+.write-us-input:focus::placeholder {
+  color: var(--basic-dark);
+}
+
+.write-us-form .button {
+  margin-top: 32px;
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  display: block;
+  padding: 9px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.write-us-form .button:hover {
+  cursor: pointer;
+}
+
+.write-us-form .button::before {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: var(--special-yellow);
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  height: 8px;
+  transition: height .22s;
+  transition-property: height;
+  transition-duration: 0.22s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.write-us-form .button:hover::before {
+  transform: translateY(-50%);
+  height: 100%;
+  transition: height .22s;
+  transition-property: height;
+  transition-duration: 0.22s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.write-us-form .button:active {
+  color: rgba(0, 0, 0, .3);
+  background-image: none;
+  background-color: var(--special-yellow);
+  cursor: pointer;
+}
+
+.modal-close {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--special-yellow);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 18px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.modal-close:hover {
+  background-color: var(--special-yellow-dark);
+  cursor: pointer;
+}
+
+.modal-close:active {
+  background-color: var(--special-yellow);
+  cursor: pointer;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
