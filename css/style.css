@@ -929,14 +929,6 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 
-.catalog-main,
-.header .container,
-.page-footer .container {
-  position: relative;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
 .popular-products {
   margin: 0 auto;
   margin-top: -129px;
