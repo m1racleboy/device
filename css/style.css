@@ -1,31 +1,31 @@
 /* Fonts */
 
 @font-face {
-  font-family: "Open Sans normal";
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans.woff2");
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("../fonts/open-sans.woff2") format("woff2"),
+    url("../fonts/open-sans.woff") format("woff");
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/open-sans-v18-latin_cyrillic-300.woff2");
-  src: local("Open Sans Light"), local("OpenSans-Light"),
-    url("../fonts/open-sans-v18-latin_cyrillic-300.woff2") format("woff2"),
-    url("../fonts/open-sans-v18-latin_cyrillic-300.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy bold";
-  src: url("../fonts/Gilroy-Extrabold.woff2");
-  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"),
-    url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
-    url("../fonts/Gilroy-Extrabold.woff") format("woff");
+  font-family: "Gilroy Bold";
+  src: url("../fonts/gilroy-extrabold.woff2");
+  src: local("gilroy extrabold"), local("gilroy-extrabold"),
+    url("../fonts/gilroy-extrabold.woff2") format("woff2"),
+    url("../fonts/gilroy-extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy normal";
-  src: ("../fonts/Gilroy-Light.woff2");
+  font-family: "Gilroy";
+  src: ("../fonts/gilroy-light.woff2");
   src: local("Gilroy Light"), local("Gilroy-Light"),
-    url("../fonts/Gilroy-Light.woff2") format("woff2"),
-    url("../fonts/Gilroy-Light.woff") format("woff");
+    url("../fonts/gilroy-light.woff2") format("woff2"),
+    url("../fonts/gilroy-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -47,10 +47,14 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1440px;
-  font-family: "Gilroy bold", Arial, sans-serif;
+  font-family: "Gilroy Bold", Arial, sans-serif;
   color: var(--basic-black);
   box-sizing: border-box;
+  font-weight: 800;
+  font-style: normal;
 }
+
+/* TODO */
 
 .page-body .container {
   position: relative;
@@ -83,7 +87,9 @@ img {
 
 .category-menu-item {
   text-transform: none;
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 16px;
 }
@@ -112,11 +118,13 @@ input[type="radio"].visually-hidden {
 }
 
 .product-description {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
   margin-top: 0;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .button {
@@ -128,73 +136,61 @@ input[type="radio"].visually-hidden {
 
 .table-parameters {
   border-spacing: 0px;
+  display: flex;
 }
 
 .table {
   display: flex;
   flex-direction: column-reverse;
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .table-cell {
-  font-family: "Gilroy normal", Arial, sans-serif;
   font-size: 36px;
   line-height: 42px;
+  font-weight: 300;
+  display: flex;
 }
 
 .table-header {
   letter-spacing: 0.1em;
+  display: flex;
 }
 
 .table-cell-item {
   letter-spacing: 0.1em;
   padding-bottom: 18px;
+  display: flex;
+  width: 160px;
+  padding: 0 0 19px;
 }
 
 .table-header-item {
-  font-family: "Gilroy normal", Arial, sans-serif;
   font-size: 13px;
   line-height: 8px;
-  font-weight: normal;
-}
-
-.slider-item:nth-child(1) .table-cell-item {
-  min-width: 155px;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  width: 160px;
+  letter-spacing: 0.1em;
+  padding: 0;
 }
 
 .slider-item:nth-child(1) .table-cell-item:nth-child(2) {
-  min-width: 137px;
-}
-
-.slider-item:nth-child(1) .table-header-item:first-child {
-  min-width: 156px;
+  width: 137px;
+  border-spacing: 0px;
 }
 
 .slider-item:nth-child(1) .table-header-item:nth-child(2) {
-  min-width: 135px;
-}
-
-.slider-item:nth-child(2) .table-cell-item:first-child {
-  min-width: 183px;
-}
-
-.slider-item:nth-child(2) .table-header-item:first-child {
-  min-width: 120px;
+  width: 137px;
 }
 
 .slider-item:nth-child(3) .table-cell-item:first-child {
-  min-width: 192px;
-}
-
-.slider-item:nth-child(3) .table-cell-item:nth-child(2) {
-  min-width: 91px;
+  width: 196px;
 }
 
 .slider-item:nth-child(3) .table-header-item:first-child {
-  min-width: 191px;
-}
-
-.slider-item:nth-child(3) .table-header-item:nth-child(2) {
-  min-width: 160px;
+  width: 196px;
 }
 
 .categories-item {
@@ -204,31 +200,37 @@ input[type="radio"].visually-hidden {
 
 .features {
   background-color: var(--basic-grey-light);
-  width: 100%;
+  padding: 0 140px;
   margin: 0 auto;
 }
 
 .feature-description {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   position: relative;
   margin: 0;
   padding: 0;
   letter-spacing: 0.1em;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .about-us-description {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 28px;
   margin: 0;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .contacts-description {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 28px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .page-footer {
@@ -247,9 +249,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-user-nav-item {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .footer-features-item:hover,
@@ -287,11 +291,13 @@ input[type="radio"].visually-hidden {
 
 .address,
 .number {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-white);
   font-style: normal;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .breadcrumbs-link:hover {
@@ -303,11 +309,13 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-item {
-  font-family: "Open sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 19px;
   margin-right: 40px;
   position: relative;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .breadcrumbs-item a {
@@ -342,11 +350,13 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-item {
-  font-family: "Open sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 19px;
   opacity: 30%;
   margin: auto 0;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .sorting-item:not(:last-child) {
@@ -358,9 +368,11 @@ input[type="radio"].visually-hidden {
 }
 
 .toddler {
-  font-family: "Gilroy normal", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .wrap {
@@ -371,11 +383,13 @@ input[type="radio"].visually-hidden {
 }
 
 .price {
-  font-family: "Gilroy normal", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
   letter-spacing: 0.05em;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .product-card-title {
@@ -393,11 +407,13 @@ input[type="radio"].visually-hidden {
 }
 
 .compare-button {
-  font-family: "Open sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   opacity: 50%;
   letter-spacing: 0.1em;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .product-item-container {
@@ -579,6 +595,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1160px;
   margin: 0 auto;
+
 }
 
 .catalog-wrap-header {
@@ -652,31 +669,24 @@ input[type="radio"].visually-hidden {
 .sort-buttons {
   display: flex;
   margin-left: auto;
-  padding-top: 5px;
 }
 
 .button-up {
-  margin-right: 22px;
-  width: 10px;
-  height: 11px;
+  margin-right: 23px;
   background-color: var(--basic-grey-light);
-  background-image: url("../img/button-up.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   border: none;
   cursor: pointer;
   opacity: 20%;
+  outline: none;
+  padding: 0;
 }
 
 .button-down {
-  width: 10px;
-  height: 11px;
   background-color: var(--basic-grey-light);
-  background-image: url("../img/button-down.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   border: none;
   cursor: pointer;
+  outline: none;
+  padding: 0;
 }
 
 .button-down:hover,
@@ -729,9 +739,11 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid transparent;
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   opacity: 30%;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .search:hover {
@@ -739,7 +751,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   padding: 8px 18px;
   line-height: 30px;
@@ -750,6 +762,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid #000;
   visibility: hidden;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .search:focus {
@@ -766,7 +780,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("../img/icon_search.svg");
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
@@ -802,12 +816,15 @@ input[type="radio"].visually-hidden {
   width: 500px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 14px;
+  font-style: normal;
+  font-weight: 300;
+
 }
 
 .exit-link {
@@ -909,6 +926,7 @@ input[type="radio"].visually-hidden {
 
 .main .container {
   position: relative;
+  padding: 0 140px;
 }
 
 .popular-products {
@@ -944,7 +962,7 @@ input[type="radio"].visually-hidden {
 
 .slide-number-item {
   font-size: 179px;
-  line-height: 213px;
+  line-height: 219px;
   text-transform: uppercase;
   color: var(--basic-white);
   position: absolute;
@@ -953,18 +971,18 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item:nth-child(3) .slide-number-item {
-  top: -17px;
-  right: 53px;
+  top: -21px;
+  right: 193px;
 }
 
 .slider-item:nth-child(2) .slide-number-item {
-  top: -18px;
-  right: 54px;
+  top: -21px;
+  right: 194px;
 }
 
 .slider-item:first-child .slide-number-item {
-  top: -17px;
-  right: 48px;
+  top: -21px;
+  right: 188px;
 }
 
 .main-logo {
@@ -1235,7 +1253,7 @@ input[type="radio"].visually-hidden {
   width: 220px;
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .slide-item-right .button::before,
@@ -1292,8 +1310,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   top: 340px;
-  right: 88px;
-  z-index: 20;
+  right: 228px;
   display: flex;
   width: 72px;
   justify-content: space-between;
@@ -1479,7 +1496,6 @@ input[type="radio"].visually-hidden {
 }
 
 .category-name {
-  font-family: "Gilroy bold";
   font-size: 18px;
   line-height: 22px;
   margin: 0;
@@ -1560,9 +1576,11 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls label {
-  font-family: "Gilroy normal", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .price-controls input {
@@ -1596,12 +1614,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-  font-family: "Gilroy bold", Arial, sans-serif;
+  font-family: "Gilroy Bold", Arial, sans-serif;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
   margin-bottom: 30px;
   position: relative;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .filter legend::before {
@@ -1615,11 +1635,13 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  font-family: "Open Sans normal", "Arial", "sans-serif";
+  font-family: "Open Sans", "Arial", "sans-serif";
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 20px;
   padding-left: 45px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .filter-option label {
@@ -1676,13 +1698,20 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.filter-input-checkbox:focus+label,
+.filter-input-radio:focus+label {
+  color: var(--special-yellow-dark);
+}
+
 .filter-input-checkbox+label:hover::before,
 .filter-input-checkbox+label:hover::after {
   opacity: 70%;
 }
 
 .filter-input-radio+label:hover::before,
-.filter-input-radio+label:hover::after {
+.filter-input-radio+label:hover::after,
+.filter-input-radio+label:focus::before,
+.filter-input-radio+label:focus::after {
   opacity: 60%;
 }
 
@@ -1693,17 +1722,21 @@ input[type="radio"].visually-hidden {
   opacity: 100%;
 }
 
+.filter-input:focus {
+  outline: var(--basic-white);
+}
+
 .filter .button {
   position: relative;
   padding: 9px 0;
   width: 200px;
   text-align: center;
   margin: 0;
-  /* margin-top: -11px; */
   border: 0;
   background-color: var(--basic-grey-light);
   z-index: 1;
 }
+
 
 .product-wrapper .button {
   position: relative;
@@ -1736,7 +1769,8 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.product-wrapper:hover .card-hover {
+.product-wrapper:hover .card-hover,
+.product-wrapper:focus .card-hover {
   display: flex;
 }
 
@@ -1894,25 +1928,27 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
   background-color: var(--basic-white);
+  /* display: flex; */
 }
 
 .modal-map {
   width: 962px;
   height: 559px;
   z-index: 2;
+  /* display: none; */
 }
 
 .write-us-form {
-  width: 760px;
-  margin: 0 auto;
-  padding: 92px 0 69px;
+  padding: 92px 100px 69px;
 }
 
 .write-us-input,
 .write-us-textarea {
-  font-family: "Open Sans normal", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 19px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .write-us-label {
@@ -1950,6 +1986,11 @@ input[type="radio"].visually-hidden {
   width: 340px;
 }
 
+.write-us-textarea:focus,
+.write-us-input:focus {
+  outline: none;
+}
+
 .write-us-textarea:hover,
 .write-us-input:hover {
   background-color: #EAEAEA;
@@ -1961,7 +2002,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, .4);
 }
 
-.write-us-form input:not(:focus):not(:hover):invalid {
+.write-us-input-invalid:invalid {
   background-color: var(--status-pink);
 }
 
@@ -2048,7 +2089,8 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   background-color: var(--special-yellow-dark);
   cursor: pointer;
 }

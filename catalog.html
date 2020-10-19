@@ -78,7 +78,7 @@
       </nav>
     </div>
   </header>
-  <main class="main">
+  <main class="main catalog-main">
     <div class="wrapper">
       <h1 class="title">Моноподы для селфи</h1>
       <ul class="breadcrumbs-list">
@@ -114,8 +114,16 @@
               </li>
             </ul>
             <div class="sort-buttons">
-              <button class="button-up"></button>
-              <button class="button-down"></button>
+              <button class="button-up">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 10H11L5.5 0L0 10Z" fill="black"/>
+                  </svg>
+              </button>
+              <button class="button-down">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 0L0 0L5.5 10L11 0Z" fill="black"/>
+                  </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -125,7 +133,7 @@
           <div class="catalog-wrap-filter">
             <section class="filter">
               <h2 class="visually-hidden">Фильтры</h2>
-              <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+              <form class="filter-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
                 <fieldset >
                   <legend class="filter-title">Стоимость</legend>
                   <div class="range-filter">
@@ -191,11 +199,11 @@
               <div class="card-wrapper">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
                 <article class="product-item-container">
-                  <div class="product-wrapper">
+                  <div class="product-wrapper" tabindex="0">
                     <img src="img/item-1-1.jpg" width="360" height="380" alt="Любительская селфи-палка" />
                     <div class="card-hover">
-                      <a href="#" class="button">В корзину</a>
-                      <a href="#" class="compare-button">Добавить к сравнению</a>
+                      <a href="#" class="button" tabindex="0">В корзину</a>
+                      <a href="#" class="compare-button" tabindex="0">Добавить к сравнению</a>
                     </div>
                   </div>
                   <div class="wrap">
@@ -204,11 +212,11 @@
                   </div>
                 </article>
                 <article class="product-item-container">
-                  <div  class="product-wrapper">
+                  <div  class="product-wrapper" tabindex="0">
                     <img src="img/item-2-1.jpg" width="360" height="380" alt="Профессианальная селфи-палка" />
-                    <div class="card-hover">
-                      <a href="#" class="button">В корзину</a>
-                      <a href="#" class="compare-button">Добавить к сравнению</a>
+                    <div class="card-hover" >
+                      <a href="#" class="button" tabindex="0">В корзину</a>
+                      <a href="#" class="compare-button" tabindex="0">Добавить к сравнению</a>
                     </div>
                   </div>
                   <div class="wrap">
@@ -217,11 +225,11 @@
                   </div>
                 </article>
                 <article class="product-item-container">
-                  <div class="product-wrapper">
+                  <div class="product-wrapper" tabindex="0">
                     <img src="img/item-3-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" />
                     <div class="card-hover">
-                      <a href="#" class="button">В корзину</a>
-                      <a href="#" class="compare-button">Добавить к сравнению</a>
+                      <a href="#" class="button" tabindex="0">В корзину</a>
+                      <a href="#" class="compare-button" tabindex="0">Добавить к сравнению</a>
                     </div>
                   </div>
                   <div class="wrap">
@@ -230,11 +238,11 @@
                   </div>
                 </article>
                 <article class="product-item-container">
-                  <div class="product-wrapper new-product">
+                  <div class="product-wrapper new-product" tabindex="0">
                     <img src="img/item-4-1.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»" />
                     <div class="card-hover">
-                      <a href="#" class="button">В корзину</a>
-                      <a href="#" class="compare-button">Добавить к сравнению</a>
+                      <a href="#" class="button" tabindex="0">В корзину</a>
+                      <a href="#" class="compare-button" tabindex="0">Добавить к сравнению</a>
                     </div>
                   </div>
                   <div class="wrap">
@@ -313,15 +321,15 @@
       <ul class="social-icons-list">
         <li class="social-icons-item">
           <a href="#">
-            <img src="img/icon_facebook.svg" width="32" height="32" alt="facebook icon" />
+            <img src="img/icon-facebook.svg" width="32" height="32" alt="facebook icon" />
           </a>
         </li>
         <li class="social-icons-item">
-          <a href="#"><img src="img/icon_instagram.svg" width="32" height="32" alt="instagram icon" /></a>
+          <a href="#"><img src="img/icon-instagram.svg" width="32" height="32" alt="instagram icon" /></a>
         </li>
         <li class="social-icons-item">
           <a href="#">
-            <img src="img/icon_twitter.svg" width="32" height="32" alt="twitter icon" /></a>
+            <img src="img/icon-twitter.svg" width="32" height="32" alt="twitter icon" /></a>
         </li>
       </ul>
       <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
