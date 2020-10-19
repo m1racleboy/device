@@ -929,6 +929,11 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 
+.сatalog-main {
+  position: relative;
+  padding: 0 10px;
+}
+
 .popular-products {
   margin: 0 auto;
   margin-top: -129px;
