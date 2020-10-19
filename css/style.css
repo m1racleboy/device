@@ -119,7 +119,7 @@ input[type="radio"].visually-hidden {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 52px;
+  margin-bottom: 51px;
   margin-top: 0;
   font-style: normal;
   font-weight: 300;
@@ -198,7 +198,7 @@ input[type="radio"].visually-hidden {
 
 .features {
   background-color: var(--basic-grey-light);
-  padding: 0 140px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -726,7 +726,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 440px;
   margin-right: 100px;
-  line-height: 30px;
+  line-height: 20px;
   display: flex;
 }
 
@@ -735,7 +735,7 @@ input[type="radio"].visually-hidden {
   width: 357px;
   margin: 0;
   padding: 8px 0 8px 40px;
-  line-height: 30px;
+  line-height: 20px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid transparent;
@@ -753,8 +753,8 @@ input[type="radio"].visually-hidden {
 .search-button {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
-  padding: 8px 18px;
-  line-height: 30px;
+  padding: 13px 18px;
+  line-height: 20px;
   letter-spacing: .01em;
   text-transform: none;
   color: #000;
@@ -926,7 +926,15 @@ input[type="radio"].visually-hidden {
 
 .main .container {
   position: relative;
-  padding: 0 140px;
+  padding: 0 10px;
+}
+
+.catalog-main,
+.header .container,
+.page-footer .container {
+  position: relative;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .popular-products {
@@ -972,17 +980,17 @@ input[type="radio"].visually-hidden {
 
 .slider-item:nth-child(3) .slide-number-item {
   top: -21px;
-  right: 193px;
+  right: 63px;
 }
 
 .slider-item:nth-child(2) .slide-number-item {
   top: -21px;
-  right: 194px;
+  right: 64px;
 }
 
 .slider-item:first-child .slide-number-item {
   top: -21px;
-  right: 188px;
+  right: 58px;
 }
 
 .main-logo {
@@ -1310,7 +1318,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   top: 340px;
-  right: 228px;
+  right: 98px;
   display: flex;
   width: 72px;
   justify-content: space-between;
@@ -1939,7 +1947,7 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us-form {
-  padding: 92px 100px 69px;
+  padding: 92px 98px 50px;
 }
 
 .write-us-input,
@@ -2002,7 +2010,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, .4);
 }
 
-.write-us-input-invalid:invalid {
+.write-us-input-invalid {
   background-color: var(--status-pink);
 }
 
