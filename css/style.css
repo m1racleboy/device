@@ -2,30 +2,30 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans.woff2");
+  src: url("../fonts/openSans.woff2");
   src: local("Open Sans Light"), local("OpenSans-Light"),
-    url("../fonts/open-sans.woff2") format("woff2"),
-    url("../fonts/open-sans.woff") format("woff");
+    url("../fonts/openSans.woff2") format("woff2"),
+    url("../fonts/openSans.woff") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Gilroy Bold";
-  src: url("../fonts/gilroy-extrabold.woff2");
+  src: url("../fonts/gilroyExtrabold.woff2");
   src: local("gilroy extrabold"), local("gilroy-extrabold"),
-    url("../fonts/gilroy-extrabold.woff2") format("woff2"),
-    url("../fonts/gilroy-extrabold.woff") format("woff");
+    url("../fonts/gilroyExtrabold.woff2") format("woff2"),
+    url("../fonts/gilroyExtrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: ("../fonts/gilroy-light.woff2");
+  src: ("../fonts/gilroyLight.woff2");
   src: local("Gilroy Light"), local("Gilroy-Light"),
-    url("../fonts/gilroy-light.woff2") format("woff2"),
-    url("../fonts/gilroy-light.woff") format("woff");
+    url("../fonts/gilroyLight.woff2") format("woff2"),
+    url("../fonts/gilroyLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -53,8 +53,6 @@ body {
   font-weight: 800;
   font-style: normal;
 }
-
-/* TODO */
 
 .page-body .container {
   position: relative;
@@ -690,7 +688,9 @@ input[type="radio"].visually-hidden {
 }
 
 .button-down:hover,
-.button-up:hover {
+.button-up:hover,
+.button-down:focus,
+.button-up:focus {
   opacity: 40%;
 }
 
