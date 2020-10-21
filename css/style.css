@@ -373,11 +373,24 @@ input[type="radio"].visually-hidden {
   font-style: normal;
 }
 
+.product-item {
+  width: 360px;
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.product-item-content {
+  line-height: 0;
+}
+
 .product-item-info {
   display: flex;
-  margin-top: 30px;
+  padding-top: 30px;
   align-items: flex-start;
-  width: 362px;
+  width: 400px;
+  position: relative;
+  z-index: 2;
 }
 
 .product-item-price {
@@ -399,11 +412,6 @@ input[type="radio"].visually-hidden {
   margin-right: 11px;
 }
 
-.product-item {
-  font-size: 18px;
-  line-height: 22px;
-}
-
 .compare-button {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
@@ -412,11 +420,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.1em;
   font-style: normal;
   font-weight: 300;
-}
-
-.product-item {
-  width: 360px;
-  position: relative;
 }
 
 .product-link {
@@ -1516,12 +1519,9 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-
-
 .range-filter {
   width: 200px;
-  position: absolute;
-  top: 56px;
+  margin-top: 9px;
 }
 
 .range-controls {
@@ -1615,7 +1615,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 98px;
+  margin-bottom: 45px;
   margin-top: 15px;
 }
 
@@ -1754,13 +1754,6 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
-.product-item-content {
-  background-color: var(--basic-grey-light);
-  width: 360px;
-  position: relative;
-  line-height: 0;
-}
-
 .product-item-buttons {
   display: flex;
   flex-direction: column;
@@ -1768,18 +1761,13 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-top: 31px;
+  top: 0;
+  height: 100%;
+  width: 100%;
   padding-right: 6px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
 }
-
-.product-item-content:focus-within .product-item-buttons,
-.product-item-content:hover .product-item-buttons {
-  visibility: visible;
-}
-
 
 .product-item-buttons .button {
   margin-bottom: 13px;
@@ -1811,7 +1799,12 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 }
 
-.product-item-content:hover img {
+.product-item-content:focus-within .product-item-buttons,
+.product-item-content:hover .product-item-buttons {
+  visibility: visible;
+}
+
+.product-item:hover img {
   opacity: 70%;
 }
 
