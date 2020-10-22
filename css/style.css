@@ -809,7 +809,7 @@ input[type="radio"].visually-hidden {
   width: 1040px;
   position: relative;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 12px;
   margin-bottom: 34px;
 }
 
@@ -938,7 +938,6 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-products {
-  background-color: white;
   margin: 0 auto;
   margin-top: -129px;
   margin-bottom: 93px;
@@ -995,9 +994,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-logo {
-  position: absolute;
-  top: -20px;
-  left: 60px;
+  display: block;
+  margin-top: -20px;
+  margin-left: 60px;
 }
 
 .product-title {
