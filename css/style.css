@@ -183,6 +183,14 @@ input[type="radio"].visually-hidden {
   width: 137px;
 }
 
+.slider-item:nth-child(2) .table-header-item:first-child {
+  width: 190px;
+}
+
+.slider-item:nth-child(2) .table-cell-item:first-child {
+  width: 190px;
+}
+
 .slider-item:nth-child(3) .table-cell-item:first-child {
   width: 196px;
 }
@@ -786,7 +794,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 50%;
 }
 
-.search:focus+.search-button {
+.search-form:focus-within .search-button {
   visibility: visible;
 }
 
@@ -997,6 +1005,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-top: -20px;
   margin-left: 60px;
+  width: 170px;
 }
 
 .product-title {
@@ -1229,6 +1238,10 @@ input[type="radio"].visually-hidden {
   height: 221px;
 }
 
+.map:hover {
+  cursor: pointer;
+}
+
 .about-us,
 .contacts {
   position: relative;
@@ -1336,6 +1349,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.slider-controls .button:focus {
+  outline: none;
+  border: 1px var(--special-yellow-dark) solid;
+  border-radius: 50%;
+}
+
 .slider-controls .current-button::before {
   position: absolute;
   content: "";
@@ -1438,6 +1457,17 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.features-item .button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.features-item .button:hover,
+.features-item .button:active {
+  cursor: pointer;
+}
+
 .features-item .button:active,
 .features-item.current .button,
 .features-item.current,
@@ -1474,6 +1504,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item:not(.current) .button:not(:active):hover::after,
+.features-item:not(.current) .button:not(:active):focus::after,
 .features-item:not(.current):not(:active) .button:not(:active):hover::after {
   content: "";
   position: absolute;
@@ -1912,6 +1943,47 @@ input[type="radio"].visually-hidden {
 
 /* MODALS */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1929,14 +2001,22 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
   background-color: var(--basic-white);
-  /* display: flex; */
 }
 
 .modal-map {
   width: 962px;
   height: 559px;
-  z-index: 2;
-  /* display: none; */
+}
+
+.modal-map iframe {
+  border: none;
+  outline: none;
+}
+
+.modal-show {
+  display: flex;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .write-us-form {
@@ -2005,6 +2085,8 @@ input[type="radio"].visually-hidden {
 
 .write-us-input-invalid {
   background-color: var(--status-pink);
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .write-us-textarea:focus,
