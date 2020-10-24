@@ -114,12 +114,12 @@
               </li>
             </ul>
             <div class="sort-buttons">
-              <button class="button-up">
+              <button class="button-up" aria-label="Кнопка сортировки от большего к меньшему">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 10H11L5.5 0L0 10Z" fill="black"/>
                   </svg>                  
               </button>
-              <button class="button-down">
+              <button class="button-down" aria-label="Кнопка сортировки от меньшего к большему">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 0L0 0L5.5 10L11 0Z" fill="black"/>
                   </svg>                  
@@ -134,7 +134,7 @@
             <section class="filter">
               <h2 class="visually-hidden">Фильтры</h2>
               <form class="filter-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
-                <fieldset >
+                <fieldset class="filter-price">
                   <legend class="filter-title">Стоимость</legend>
                   <div class="range-filter" aria-label="Фильтр с диапазоном">
                     <div class="range-controls">
@@ -152,7 +152,7 @@
                       </div>
                   </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-color">
                 <legend class="filter-title">Цвет</legend>
                 <ul>
                   <li class="filter-option ">
@@ -177,7 +177,7 @@
                   </li>
                 </ul> 
               </fieldset>
-              <fieldset class="filter-item">
+              <fieldset class="filter-bluetooth">
                 <legend class="filter-title">Bluetooth</legend>
                 <ul>
                   <li class="filter-option filter-radio">
@@ -190,7 +190,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button type="submit" class="filter-button button">Показать</button>
+              <button type="submit" class="filter-button button" aria-label="Кнопка применения фильтров">Показать</button>
               </form>
             </section>
           </div>
