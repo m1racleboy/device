@@ -1525,6 +1525,10 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.current-slide {
+  display: flex;
+}
+
 .slide-item-right::before {
   content: "";
   position: absolute;

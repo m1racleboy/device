@@ -166,11 +166,11 @@
             </li>
           </ul>
           <div class="slider-controls">
-            <button class="button current-button" type="button" aria-label="Первый слайд">
+            <button class="button slider-button" onclick="currentSlide(1)" type="button" aria-label="Первый слайд">
             </button>
-            <button class="button" type="button" aria-label="Второй слайд">
+            <button class="button slider-button" onclick="currentSlide(2)" type="button" aria-label="Второй слайд">
             </button>
-            <button class="button" type="button" aria-label="Третий слайд">
+            <button class="button slider-button" onclick="currentSlide(3)" type="button" aria-label="Третий слайд">
             </button>
           </div>
         </div>
@@ -221,18 +221,18 @@
       <div class="feature-wrapper">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
-          <li class="features-item current">
-            <button class="button">Доставка</button>
+          <li class="features-item current" onclick="currentSlides(1)">
+            <button class="button" >Доставка</button>
           </li>
-          <li class="features-item">
+          <li class="features-item" onclick="currentSlides(2)">
             <button class="button">Гарантия</button>
           </li>
-          <li class="features-item">
+          <li class="features-item" onclick="currentSlides(3)">
             <button class="button">Кредит</button>
           </li>
         </ul>
         <ul class="feature-slider-list">
-          <li class="feature-slide dilevery slide-current">
+          <li class="feature-slide dilevery current-slide">
             <h3 class="feature-title title">Доставка</h3>
             <p class="feature-description">
               Мы с удовольствием доставим ваш товар прямо к вашему<br>

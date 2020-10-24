@@ -58,40 +58,74 @@ form.addEventListener("submit", function (evt) {
 
 // slider-top
 
-const sliderButtonTop = document.querySelector('.slider-controls');
+let slideIndex = 1;
+showSlides(slideIndex);
 
-sliderButtonTop.onclick=function(e){
-  const slider = document.querySelector('.slider-list');
-  for(let i = 0; i < sliderButtonTop.children.length; i++){
-    sliderButtonTop.children[i].classList.remove('current-button');
-    slider.children[i].classList.remove('slide-current');
-  }
-  e.target.classList.add('current-button');
-
-  for(i = 0; i < sliderButtonTop.children.length; i++){
-    if(sliderButtonTop.children[i].classList.contains('current-button')){
-      slider.children[i].classList.add('slide-current');
-      break;
-    }
-  }
+function plusSlide() {
+    showSlides(slideIndex += 1);
 }
+
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slider-item");
+    let dots = document.getElementsByClassName("slider-button");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("slide-current");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("current-button");
+    }
+    slides[slideIndex - 1].classList.add("slide-current");
+    dots[slideIndex - 1].classList.add("current-button");
+}
+
 
 // slider-bottom
 
-const sliderButtonBottom = document.querySelector('.features-list');
+let sliderIndex = 1;
+showSlide(sliderIndex);
 
-sliderButtonBottom.onclick=function(e){
-  const slider = document.querySelector('.feature-slider-list');
-  for(let i = 0; i < sliderButtonBottom.children.length; i++){
-    sliderButtonBottom.children[i].classList.remove('current');
-    slider.children[i].classList.remove('slide-current');
-  }
-  e.target.parentNode.classList.add('current');
+function plusSlide() {
+    showSlide(sliderIndex += 1);
+}
 
-  for(i = 0; i < sliderButtonBottom.children.length; i++){
-    if(sliderButtonBottom.children[i].classList.contains('current')){
-      slider.children[i].classList.add('slide-current');
-      break;
+function minusSlide() {
+    showSlide(sliderIndex -= 1);  
+}
+
+function currentSlides(n) {
+    showSlide(sliderIndex = n);
+}
+
+function showSlide(n) {
+    let slide = document.getElementsByClassName("feature-slide");
+    let item = document.getElementsByClassName("features-item");
+    if (n > slide.length) {
+      sliderIndex = 1;
     }
-  }
+    if (n < 1) {
+        sliderIndex = slide.length;
+    }
+    for (i = 0; i < slide.length; i++) {
+        slide[i].classList.remove("current-slide");
+    }
+    for (i = 0; i < item.length; i++) {
+        item[i].classList.remove("current");
+    }
+    slide[sliderIndex - 1].classList.add("current-slide");
+    item[sliderIndex - 1].classList.add("current");
 }
