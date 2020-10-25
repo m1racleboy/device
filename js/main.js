@@ -4,15 +4,11 @@ const map = document.querySelector('.map');
 const modalMap = document.querySelector('.modal-map');
 const closeWriteUs = document.querySelector('.close-write-us');
 const closeMap = document.querySelector('.close-map');
-const form = modalWriteUs.querySelector('form');
-const nameField = modalWriteUs.querySelector('[name=name]');
-const emailField = modalWriteUs.querySelector('[name=email]');
-const messageField = modalWriteUs.querySelector('[name=text]');
 
 contactsButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalWriteUs.classList.add('modal-show');
-  nameField.focus();
+  document.querySelector('[name=name]').focus();
 });
 
 map.addEventListener('click', function (evt) {
@@ -23,9 +19,6 @@ map.addEventListener('click', function (evt) {
 closeWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalWriteUs.classList.remove('modal-show');
-  nameField.classList.remove('write-us-input-invalid');
-  emailField.classList.remove('write-us-input-invalid');
-  messageField.classList.remove('write-us-input-invalid');
 });
 
 closeMap.addEventListener('click', function (evt) {
