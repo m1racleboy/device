@@ -1573,7 +1573,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls .bar {
-  width: 50%;
+  width: 124px;
   height: 2px;
   background: var(--special-green);
 }
