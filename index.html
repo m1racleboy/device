@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -302,9 +302,9 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <div class="map">
-            <img src="img/map-1.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-          </div>
+            <a href="map.html" class="map">
+              <img src="img/map-1.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+            </a> 
           <a href="write-us.html" class="button">Напишите нам</a>
         </section>
       </div>
@@ -372,16 +372,16 @@
       <div class="form-input-wrapper">
         <div class="wrapper-column">
           <label class="write-us-label" for="write-us-name">Ваше имя:</label>
-          <input type="text" class="write-us-input" name="name" id="write-us-name" placeholder="Имя Фамилия" required>
+          <input type="text" class="write-us-input" name="name" id="write-us-name" placeholder="Имя Фамилия">
         </div>
         <div class="wrapper-column">
           <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
-          <input type="email" class="write-us-input write-us-input-invalid" name="email" id="write-us-email" placeholder="email@example.com" required>
+          <input type="email" class="write-us-input" name="email" id="write-us-email" placeholder="email@example.com">
         </div>
       </div>
       <div class="wrapper-column">
         <label class="write-us-label" for="write-us-text">Текст письма:</label>
-        <textarea class="write-us-textarea" name="text" id="write-us-text" placeholder="В свободной форме" required></textarea>
+        <textarea class="write-us-textarea" name="text" id="write-us-text" placeholder="В свободной форме" ></textarea>
       </div>
       <button type="submit" class="button" aria-label="Кнопка отправки формы обратной связи">Отправить</button>
     </form>
