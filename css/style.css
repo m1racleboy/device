@@ -1455,7 +1455,7 @@ input[type="radio"].visually-hidden {
 .slider-controls .button:focus {
   border: 1px var(--special-yellow-dark) solid;
   border-radius: 50%;
-  outline: none;
+  outline: none; 
 }
 
 .slider-controls .current-button::before {
