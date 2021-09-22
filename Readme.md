@@ -1,10 +1,10 @@
 # Учебный проект "Device"
 
-## 1. Стек: HTML5, CSS3, JS
-## 2. О проекте: сетки на flex, grid, статичная верстка, normalize css, минимизированы css, js
-## 3. Кроссбраузерность: Chrome, Safari, Firefox
+## Стек: HTML5, CSS3, JS
+## О проекте: сетки на flex, grid, статичная верстка, normalize css, минимизированы css, js
+## Кроссбраузерность: Chrome, Safari, Firefox
+## Preview:
 
-## 4. Images:
 ### 1. main page: 
 ![Screenshot 2021-09-22 at 20-17-10 HTML Academy Девайс](https://user-images.githubusercontent.com/56030631/134392156-eff3b468-5fa5-411b-9d02-8fe9562e09a6.png)
 ### 2. catalog page: 
